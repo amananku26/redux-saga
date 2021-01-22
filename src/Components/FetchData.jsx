@@ -32,8 +32,8 @@ class FetchData extends Component {
 
 const mapStateToProps = (state) => {
  return{
-     user:state.fetchDataReducer.user,
-     error:state.fetchDataReducer.error
+     user:state.user,
+     error:state.error
  }
 }
 
