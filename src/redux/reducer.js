@@ -8,9 +8,9 @@ const initState = {
     error:{}
 }
 
-const reducer  =  (state = initState , action) => {
-
-    switch(action.types){
+const FetchDataReducer  =  (state = initState , action) => {
+console.log("reducer",action)
+    switch(action.type){
         case types.SEND_REQUEST:
             return{
                 ...state,
@@ -29,8 +29,8 @@ const reducer  =  (state = initState , action) => {
                 loading:true,
                 error:{}
             }
-        default: return{ state }        
+        default: return { state }        
     }
 }
 
-export default reducer
+export default FetchDataReducer
