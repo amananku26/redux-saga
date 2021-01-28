@@ -12,6 +12,7 @@ const sagaMiddleware = createSagaMiddleware();
 
 const store = createStore(RootReducer , applyMiddleware(sagaMiddleware))
 
+
 sagaMiddleware.run(RootSaga)
 
 console.log("store ",store.getState())
